@@ -16,7 +16,7 @@ function getFavs() {
 
 const button = document.querySelector('button');
 
-button.onclick = getFavs();
+button.onclick = getFavs;
 
 /*
 Their answer
