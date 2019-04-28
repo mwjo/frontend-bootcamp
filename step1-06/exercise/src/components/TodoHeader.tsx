@@ -11,7 +11,9 @@ export class TodoHeader extends React.Component<any, any> {
 
     return (
       <header>
-        <h1>todos <small>(1.6 exercise)</small></h1>
+        <h1>
+          todos <small>(1.6 exercise)</small>
+        </h1>
         <div className="addTodo">
           <input value={this.state.labelInput} onChange={this._onChange} className="textfield" placeholder="add todo" />
           <button className="submit">Add</button>
@@ -24,6 +26,7 @@ export class TodoHeader extends React.Component<any, any> {
       </header>
     );
   }
+
   _onChange = evt => {
     this.setState({ labelInput: evt.target.value });
   };
